@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todo_app/home_page.dart';
+import 'package:todo_app/pages/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: const HomePage(),
-      theme: ThemeData(primarySwatch: Colors.yellow),
+      theme: ThemeData(
+        primarySwatch: Colors.yellow,  // This creates a full color palette
+      ),
     );
   }
 }
